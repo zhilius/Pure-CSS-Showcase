@@ -1006,10 +1006,10 @@ input:checked + .slider-t::before {
   backface-visibility: hidden;
 }
 .cf-1 { transform: rotateY(0deg) translateZ(80px); background: #534AB7; }
-.cf-2 { transform: rotateY(72deg) translateZ(80px); background: #1D9E75; }
+.cf-2 { transform: rotateY(72deg) translateZ(80px); background: #187A5C; }
 .cf-3 { transform: rotateY(144deg) translateZ(80px); background: #AD4018; }
-.cf-4 { transform: rotateY(216deg) translateZ(80px); background: #D4537E; }
-.cf-5 { transform: rotateY(288deg) translateZ(80px); background: #378ADD; }
+.cf-4 { transform: rotateY(216deg) translateZ(80px); background: #B84A68; }
+.cf-5 { transform: rotateY(288deg) translateZ(80px); background: #2E72B8; }
 @keyframes carousel-spin {
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
