@@ -10,7 +10,7 @@
   --color-background-secondary: #16213e;
   --color-background-tertiary: #0f3460;
   --color-text-primary: #e8e8e8;
-  --color-text-secondary: #a0a0b8;
+  --color-text-secondary: #b8b8d0;
   --color-border-secondary: #2a2a4a;
   --color-border-tertiary: #2a2a4a;
   --border-radius-lg: 12px;
@@ -960,8 +960,9 @@ input:checked + .slider-t::before {
 }
 .pl-back {
   transform: translateZ(-1px) scale(2);
-  color: var(--c1);
+  color: var(--color-text-primary);
   font-size: 20px;
+  opacity: 0.85;
 }
 .pl-front {
   transform: translateZ(0);
@@ -1004,111 +1005,14 @@ input:checked + .slider-t::before {
   border-radius: 8px;
   backface-visibility: hidden;
 }
-.cf-1 { transform: rotateY(0deg) translateZ(80px); background: rgba(83,74,183,0.88); }
-.cf-2 { transform: rotateY(72deg) translateZ(80px); background: rgba(29,158,117,0.88); }
-.cf-3 { transform: rotateY(144deg) translateZ(80px); background: rgba(173,64,24,0.88); }
-.cf-4 { transform: rotateY(216deg) translateZ(80px); background: rgba(212,83,126,0.88); }
-.cf-5 { transform: rotateY(288deg) translateZ(80px); background: rgba(55,138,221,0.88); }
+.cf-1 { transform: rotateY(0deg) translateZ(80px); background: #534AB7; }
+.cf-2 { transform: rotateY(72deg) translateZ(80px); background: #1D9E75; }
+.cf-3 { transform: rotateY(144deg) translateZ(80px); background: #AD4018; }
+.cf-4 { transform: rotateY(216deg) translateZ(80px); background: #D4537E; }
+.cf-5 { transform: rotateY(288deg) translateZ(80px); background: #378ADD; }
 @keyframes carousel-spin {
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
-}
-
-/* --- Conic-gradient Border --- */
-.conic-border {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  border-radius: 50%;
-  background: var(--color-background-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--color-text-primary);
-  position: relative;
-  z-index: 0;
-}
-.conic-border::before {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  background: conic-gradient(var(--c1), var(--c4), var(--c2), var(--c5), var(--c1));
-  z-index: -1;
-  animation: conic-rotate 2s linear infinite;
-}
-@keyframes conic-rotate {
-  to { transform: rotate(360deg); }
-}
-
-/* --- CSS Filters --- */
-.filters-grid {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.filter-item {
-  width: 70px;
-  height: 70px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--c1), var(--c4));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 9px;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  line-height: 1.2;
-  padding: 4px;
-}
-.fl-blur { filter: blur(2px); }
-.fl-grayscale { filter: grayscale(1); }
-.fl-hue { filter: hue-rotate(180deg); }
-.fl-contrast { filter: contrast(2); }
-.fl-bright { filter: brightness(1.5); }
-
-/* --- Scroll-Driven Animations --- */
-.sda-container {
-  height: 90px;
-  overflow-y: auto;
-  border-radius: 8px;
-  background: var(--color-background-secondary);
-  position: relative;
-}
-.sda-content {
-  padding: 10px;
-  padding-bottom: 0;
-}
-.sda-content p {
-  font-size: 11px;
-  color: var(--color-text-secondary);
-  margin: 0 0 8px;
-  line-height: 1.5;
-}
-.sda-track {
-  position: sticky;
-  bottom: 0;
-  height: 6px;
-  background: var(--color-background-tertiary);
-  border-radius: 100px;
-  overflow: hidden;
-}
-.sda-fill {
-  height: 100%;
-  width: 100%;
-  background: var(--c1);
-  border-radius: 100px;
-  transform-origin: left;
-  animation: sda-fill linear;
-  animation-timeline: scroll(self);
-}
-@keyframes sda-fill {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
 }
 
 /* --- Anchor Positioning --- */
@@ -1168,18 +1072,6 @@ input:checked + .slider-t::before {
 .ld-dot-d { background: #1a1a2e; }
 .ld-dot-l { background: #ffffff; }
 
-/* --- CSS Nesting --- */
-.nesting-pre {
-  font-size: 11px;
-  line-height: 1.5;
-  background: var(--color-background-secondary);
-  padding: 12px;
-  border-radius: 8px;
-  overflow-x: auto;
-  margin: 0;
-  color: var(--color-text-secondary);
-}
-
 /* --- Accordion --- */
 .accordion {
   display: flex;
@@ -1208,169 +1100,6 @@ input:checked + .slider-t::before {
   color: var(--color-text-secondary);
   line-height: 1.5;
 }
-
-/* --- Scroll Snap Gallery --- */
-.snap-gallery {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 4px;
-  border-radius: 8px;
-  background: var(--color-background-secondary);
-}
-.snap-item {
-  flex: 0 0 60px;
-  height: 60px;
-  border-radius: 8px;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 18px;
-  color: #fff;
-}
-.si-1 { background: var(--c1); }
-.si-2 { background: var(--c2); }
-.si-3 { background: var(--c3); }
-.si-4 { background: var(--c4); }
-.si-5 { background: var(--c5); }
-.si-6 { background: var(--c6); }
-
-/* --- CSS Tooltips --- */
-.tt-demo {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  padding: 8px 0;
-}
-.tt-el {
-  position: relative;
-  cursor: help;
-  width: 44px;
-  height: 44px;
-  background: var(--c1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-}
-.tt-el::after {
-  content: attr(data-tip);
-  position: absolute;
-  bottom: calc(100% + 6px);
-  left: 50%;
-  translate: -50% 0;
-  background: var(--color-background-secondary);
-  border: 1px solid var(--color-border-secondary);
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-size: 11px;
-  font-weight: 400;
-  color: var(--color-text-primary);
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .2s;
-}
-.tt-el:hover::after {
-  opacity: 1;
-}
-
-/* --- CSS Counters --- */
-.counter-ol {
-  counter-reset: step;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.counter-ol li {
-  counter-increment: step;
-  padding: 4px 0;
-  font-size: 12px;
-  color: var(--color-text-secondary);
-}
-.counter-ol li::before {
-  content: counter(step) ". ";
-  font-weight: 600;
-  color: var(--c1);
-}
-
-/* --- CSS-only Illustration --- */
-.ill-scene {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-}
-.ill-robot {
-  position: relative;
-  width: 60px;
-  height: 80px;
-}
-.ill-head {
-  width: 32px;
-  height: 28px;
-  background: var(--c1);
-  border-radius: 8px 8px 4px 4px;
-  margin: 0 auto;
-}
-.ill-eye {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background: #fff;
-  border-radius: 50%;
-  top: 10px;
-}
-.ill-eye-l { left: 14px; }
-.ill-eye-r { right: 14px; }
-.ill-body {
-  width: 44px;
-  height: 32px;
-  background: var(--c4);
-  border-radius: 4px 4px 8px 8px;
-  margin: 4px auto 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ill-screen {
-  width: 28px;
-  height: 18px;
-  background: var(--color-background-primary);
-  border-radius: 3px;
-  font-size: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--c1);
-  font-weight: 700;
-}
-.ill-arm {
-  position: absolute;
-  width: 6px;
-  height: 22px;
-  background: var(--c1);
-  border-radius: 3px;
-  top: 32px;
-}
-.ill-arm-l { left: -4px; transform: rotate(15deg); }
-.ill-arm-r { right: -4px; transform: rotate(-15deg); }
-.ill-leg {
-  position: absolute;
-  width: 6px;
-  height: 18px;
-  background: var(--c1);
-  border-radius: 3px;
-  bottom: 0;
-}
-.ill-leg-l { left: 12px; }
-.ill-leg-r { right: 12px; }
 
 @media (max-width: 700px) {
   .showcase {
@@ -1453,8 +1182,5 @@ input:checked + .slider-t::before {
   .clip-shape { transition: none !important; transform: none !important; opacity: 1 !important; }
   .grad-orb { animation: none !important; }
   .carousel { animation: none !important; transform: none !important; }
-  .conic-border::before { animation: none !important; }
-  .sda-fill { animation: none !important; transform: scaleX(1) !important; }
   .parallax-scene { overflow: visible; }
-  .tt-el::after { transition: none !important; opacity: 0 !important; }
 }

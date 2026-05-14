@@ -224,7 +224,7 @@
           <svg class="path-svg" viewBox="0 0 200 110" aria-hidden="true" fill="none">
             <path d="M 25,55 C 25,12 175,12 175,55 C 175,98 25,98 25,55" stroke="var(--color-border-secondary)" stroke-width="1.5" stroke-dasharray="4 3"/>
           </svg>
-          <div class="path-runner" aria-label="Animation following a path"></div>
+          <div class="path-runner" role="img" aria-label="Animation following a path"></div>
         </div>
       </section>
 
@@ -311,34 +311,6 @@
         </div>
       </section>
 
-      <section class="card" aria-labelledby="c-conic">
-        <h2 id="c-conic" class="card-title"><a href="pages/conic-border.html" class="card-link">Conic-gradient Border</a></h2>
-        <div class="conic-border" role="img" aria-label="Conic gradient border">CSS</div>
-      </section>
-
-      <section class="card" aria-labelledby="c-filters">
-        <h2 id="c-filters" class="card-title"><a href="pages/filters.html" class="card-link">CSS Filters</a></h2>
-        <div class="filters-grid">
-          <div class="filter-item fl-blur" role="img" aria-label="Blur filter">Blur</div>
-          <div class="filter-item fl-grayscale" role="img" aria-label="Grayscale filter">Gray</div>
-          <div class="filter-item fl-hue" role="img" aria-label="Hue rotate filter">Hue</div>
-          <div class="filter-item fl-contrast" role="img" aria-label="Contrast filter">Contrast</div>
-          <div class="filter-item fl-bright" role="img" aria-label="Brightness filter">Bright</div>
-        </div>
-      </section>
-
-      <section class="card" aria-labelledby="c-sda">
-        <h2 id="c-sda" class="card-title"><a href="pages/scroll-animations.html" class="card-link">Scroll-Driven Animations</a></h2>
-        <div class="sda-container">
-          <div class="sda-content">
-            <p>Scroll down &darr; the progress bar fills as you scroll.</p>
-            <p style="margin-top:40px;">Almost there&hellip;</p>
-            <p style="margin-top:40px;">Done!</p>
-          </div>
-          <div class="sda-track"><div class="sda-fill"></div></div>
-        </div>
-      </section>
-
       <section class="card" aria-labelledby="c-anchor">
         <h2 id="c-anchor" class="card-title"><a href="pages/anchor-positioning.html" class="card-link">Anchor Positioning</a></h2>
         <div class="anchor-stage">
@@ -358,22 +330,6 @@
         </div>
       </section>
 
-      <section class="card" aria-labelledby="c-nesting">
-        <h2 id="c-nesting" class="card-title"><a href="pages/css-nesting.html" class="card-link">CSS Nesting</a></h2>
-        <pre class="nesting-pre"><code>.card {
-  background: #fff;
-  & .title {
-    font-weight: bold;
-  }
-  & > p {
-    color: gray;
-  }
-  &:hover {
-    scale: 1.02;
-  }
-}</code></pre>
-      </section>
-
       <section class="card" aria-labelledby="c-accordion">
         <h2 id="c-accordion" class="card-title"><a href="pages/accordion.html" class="card-link">Accordion</a></h2>
         <div class="accordion">
@@ -385,55 +341,6 @@
             <summary>Is it responsive?</summary>
             <div class="ac-body">Yes! Media queries, container queries, and clamp() make it fully responsive.</div>
           </details>
-        </div>
-      </section>
-
-      <section class="card" aria-labelledby="c-snap">
-        <h2 id="c-snap" class="card-title"><a href="pages/scroll-snap.html" class="card-link">Scroll Snap</a></h2>
-        <div class="snap-gallery">
-          <div class="snap-item si-1">1</div>
-          <div class="snap-item si-2">2</div>
-          <div class="snap-item si-3">3</div>
-          <div class="snap-item si-4">4</div>
-          <div class="snap-item si-5">5</div>
-          <div class="snap-item si-6">6</div>
-        </div>
-      </section>
-
-      <section class="card" aria-labelledby="c-tooltips">
-        <h2 id="c-tooltips" class="card-title"><a href="pages/tooltips.html" class="card-link">CSS Tooltips</a></h2>
-        <div class="tt-demo">
-          <div class="tt-el" data-tip="Home" style="background:var(--c1)" aria-label="Home">H</div>
-          <div class="tt-el" data-tip="Search" style="background:var(--c2)" aria-label="Search">S</div>
-          <div class="tt-el" data-tip="Settings" style="background:var(--c4)" aria-label="Settings">G</div>
-        </div>
-      </section>
-
-      <section class="card" aria-labelledby="c-counters">
-        <h2 id="c-counters" class="card-title"><a href="pages/counters.html" class="card-link">CSS Counters</a></h2>
-        <ol class="counter-ol">
-          <li>Install CSS</li>
-          <li>Write styles</li>
-          <li>Enjoy</li>
-        </ol>
-      </section>
-
-      <section class="card" aria-labelledby="c-illustration">
-        <h2 id="c-illustration" class="card-title"><a href="pages/illustration.html" class="card-link">CSS-only Illustration</a></h2>
-        <div class="ill-scene" role="img" aria-label="CSS robot illustration">
-          <div class="ill-robot">
-            <div class="ill-head">
-              <div class="ill-eye ill-eye-l"></div>
-              <div class="ill-eye ill-eye-r"></div>
-            </div>
-            <div class="ill-arm ill-arm-l"></div>
-            <div class="ill-arm ill-arm-r"></div>
-            <div class="ill-body">
-              <div class="ill-screen">CSS</div>
-            </div>
-            <div class="ill-leg ill-leg-l"></div>
-            <div class="ill-leg ill-leg-r"></div>
-          </div>
         </div>
       </section>
 
