@@ -1452,4 +1452,9 @@ input:checked + .slider-t::before {
   .cube { animation: none !important; transform: rotateX(-25deg) rotateY(0deg) !important; }
   .clip-shape { transition: none !important; transform: none !important; opacity: 1 !important; }
   .grad-orb { animation: none !important; }
+  .carousel { animation: none !important; transform: none !important; }
+  .conic-border::before { animation: none !important; }
+  .sda-fill { animation: none !important; transform: scaleX(1) !important; }
+  .parallax-scene { overflow: visible; }
+  .tt-el::after { transition: none !important; opacity: 0 !important; }
 }
