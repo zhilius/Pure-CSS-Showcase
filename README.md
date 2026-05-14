@@ -28,16 +28,6 @@ All animations, layouts, interactions, and visual effects are built exclusively 
 - **light-dark()** — automatic theme colors
 - **Accordion** — details/summary element
 
-## Getting started
-
-Open `index.html` in any modern browser. No build tools, no servers, no JavaScript.
-
-```
-git clone https://github.com/zhilius/Pure-CSS-Showcase.git
-cd Pure-CSS-Showcase
-start index.html
-```
-
 ## Browser support
 
 Modern browsers: Chrome, Firefox, Safari, Edge. Some features (anchor positioning, container queries, scroll-driven animations) require the latest versions.
