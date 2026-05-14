@@ -1,0 +1,38 @@
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .spin { animation: none !important; }
+  .pulse { animation: none !important; }
+  .bounce span { animation: none !important; }
+  .wave span { animation: none !important; }
+  .geo-inner { animation: none !important; }
+  .orbit-ring { animation: none !important; }
+  .gradient-text { animation: none !important; }
+  .typewriter {
+    width: 14ch;
+    border-right-color: transparent;
+    animation: none !important;
+  }
+  .glitch { animation: none !important; }
+  .glitch::before,
+  .glitch::after { animation: none !important; display: none; }
+  .bar-fill { animation: none !important; transform: none !important; }
+  .m { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .skel::after { animation: none !important; display: none; }
+  .btn-demo { transition: none !important; }
+  .btn-slide::after { transition: none !important; }
+  .flip-inner { transition: none !important; }
+  .slider-t { transition: none !important; }
+  .slider-t::before { transition: none !important; }
+  .gb1, .gb2 { animation: none !important; }
+  .path-runner { animation: none !important; offset-distance: 100%; }
+  .cube { animation: none !important; transform: rotateX(-25deg) rotateY(0deg) !important; }
+  .clip-shape { transition: none !important; transform: none !important; }
+  .grad-orb { animation: none !important; background: linear-gradient(135deg, var(--c1), var(--c4), var(--c2), var(--c5)) !important; }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure CSS Showcase — Animations, art, layouts, and effects without JavaScript</title>
+  <meta name="description" content="A demonstration of the power of pure CSS: animations, geometric art, interactive buttons, text effects, animated mosaics, and more — all without a single line of JavaScript.">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="logo.png">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <meta property="og:title" content="Pure CSS Showcase">
+  <meta property="og:description" content="Animations, art, layouts, and visual effects created exclusively with pure CSS, without JavaScript.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Pure CSS Showcase",
+    "description": "A demonstration of the power of pure CSS: animations, geometric art, interactive buttons, text effects, and more — all without JavaScript.",
+    "inLanguage": "en-US",
+    "about": {
+      "@type": "Thing",
+      "name": "Pure CSS",
+      "description": "Visual techniques and effects created exclusively with CSS, without using JavaScript"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#content" class="skip-link">Skip to main content</a>
+
+  <header class="page-header">
+    <h1 class="page-title">Pure CSS Showcase</h1>
+    <p class="sr-only">A showcase of pure CSS: animations, art, layouts, and effects without a single line of JavaScript</p>
+  </header>
+
+  <main id="content">
+    <div class="showcase">
+
+      <section class="card" aria-labelledby="c-loaders">
+        <h2 id="c-loaders" class="card-title"><a href="pages/loaders.html" class="card-link">Animated Loaders</a></h2>
+        <div class="loaders">
+          <div class="spin" role="status"><span class="sr-only">Loading…</span></div>
+          <div class="pulse" role="status"><span class="sr-only">Loading…</span></div>
+          <div class="bounce" role="status" aria-label="Loading"><span></span><span></span><span></span></div>
+          <div class="wave" role="status" aria-label="Loading"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-geo">
+        <h2 id="c-geo" class="card-title"><a href="pages/morphism.html" class="card-link">Morphism &amp; Orbit</a></h2>
+        <div class="geo">
+          <div class="geo-inner" aria-hidden="true"></div>
+          <div class="orbit" aria-hidden="true">
+            <div class="orbit-center"></div>
+            <div class="orbit-ring"><div class="orbit-dot"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-btns">
+        <h2 id="c-btns" class="card-title"><a href="pages/buttons.html" class="card-link">Button Effects</a></h2>
+        <div class="btns">
+          <button class="btn-demo btn-fill" type="button">Hover: lift</button>
+          <button class="btn-demo btn-outline" type="button">Hover: fill</button>
+          <button class="btn-demo btn-3d" type="button">Hover: 3D press</button>
+          <button class="btn-demo btn-slide" type="button">Hover: slide in</button>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-text">
+        <h2 id="c-text" class="card-title"><a href="pages/text-effects.html" class="card-link">Text Effects</a></h2>
+        <div class="text-anim">
+          <div class="gradient-text" aria-hidden="true">CSS is powerful</div>
+          <div class="typewriter" aria-label="Hello, world!">Hello, world!</div>
+          <div class="glitch" data-text="Glitch effect" aria-label="Glitch effect" role="text">Glitch effect</div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-bars">
+        <h2 id="c-bars" class="card-title"><a href="pages/progress-bars.html" class="card-link">Progress Bars</a></h2>
+        <div class="bars">
+          <div class="bar-wrap">
+            <div class="bar-label"><span>CSS Grid</span><span>87%</span></div>
+            <div class="bar-track" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="CSS Grid 87%">
+              <div class="bar-fill bar-c1" style="width:87%"></div>
+            </div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-label"><span>Flexbox</span><span>63%</span></div>
+            <div class="bar-track" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100" aria-label="Flexbox 63%">
+              <div class="bar-fill bar-c2" style="width:63%"></div>
+            </div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-label"><span>Animations</span><span>41%</span></div>
+              <div class="bar-track" role="progressbar" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" aria-label="Animations 41%">
+              <div class="bar-fill bar-c3" style="width:41%"></div>
+            </div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-label"><span>Variables</span><span>95%</span></div>
+            <div class="bar-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Variables 95%">
+              <div class="bar-fill bar-c4" style="width:95%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-flips">
+        <h2 id="c-flips" class="card-title"><a href="pages/flip-cards.html" class="card-link">Flip Cards (hover)</a></h2>
+        <div class="flips">
+          <article class="flip-card f1" aria-label="N: No">
+            <div class="flip-inner">
+              <div class="flip-front" aria-hidden="true">N</div>
+              <div class="flip-back">No</div>
+            </div>
+          </article>
+          <article class="flip-card f2" aria-label="J: JS">
+            <div class="flip-inner">
+              <div class="flip-front" aria-hidden="true">J</div>
+              <div class="flip-back">JS</div>
+            </div>
+          </article>
+          <article class="flip-card f3" aria-label="O: Only">
+            <div class="flip-inner">
+              <div class="flip-front" aria-hidden="true">O</div>
+              <div class="flip-back">Only</div>
+            </div>
+          </article>
+          <article class="flip-card f4" aria-label="C: CSS">
+            <div class="flip-inner">
+              <div class="flip-front" aria-hidden="true">C</div>
+              <div class="flip-back">CSS</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-mosaic">
+        <h2 id="c-mosaic" class="card-title"><a href="pages/mosaic.html" class="card-link">Animated Mosaic</a></h2>
+        <div class="mosaic" role="img" aria-label="Animated color mosaic">
+          <div class="m m1"></div><div class="m m2"></div><div class="m m3"></div>
+          <div class="m m4"></div><div class="m m5"></div><div class="m m6"></div>
+          <div class="m m7"></div><div class="m m8"></div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-inputs">
+        <h2 id="c-inputs" class="card-title"><a href="pages/floating-label.html" class="card-link">Floating Label + Validation</a></h2>
+        <div class="inputs">
+          <div class="inp-wrap">
+            <input type="email" placeholder=" " id="email" autocomplete="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="inp-wrap">
+            <input type="text" pattern=".{3,}" placeholder=" " id="name" autocomplete="name">
+            <label for="name">Name (min. 3 letters)</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="card full" aria-labelledby="c-toggles">
+        <h2 id="c-toggles" class="card-title"><a href="pages/toggles-skeleton.html" class="card-link">Native Toggles + Skeleton Loader</a></h2>
+        <div class="split-col">
+          <div class="toggles">
+            <label class="toggle-row">
+              <span>Notifications</span>
+              <span class="toggle"><input type="checkbox" checked><span class="slider-t"></span></span>
+            </label>
+            <label class="toggle-row">
+              <span>Dark mode</span>
+              <span class="toggle"><input type="checkbox"><span class="slider-t"></span></span>
+            </label>
+            <label class="toggle-row">
+              <span>Sync</span>
+              <span class="toggle"><input type="checkbox" checked><span class="slider-t"></span></span>
+            </label>
+            <label class="toggle-row">
+              <span>Analytics</span>
+              <span class="toggle"><input type="checkbox"><span class="slider-t"></span></span>
+            </label>
+          </div>
+          <div class="skeleton" aria-label="Content loading placeholder" role="status">
+            <span class="sr-only">Content is loading…</span>
+            <div class="skel-row">
+              <div class="skel skel-avatar"></div>
+              <div class="skel-lines">
+                <div class="skel skel-line"></div>
+                <div class="skel skel-line sm"></div>
+              </div>
+            </div>
+            <div class="skel skel-line"></div>
+            <div class="skel skel-line w-80"></div>
+            <div class="skel skel-line w-60"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-glass">
+        <h2 id="c-glass" class="card-title"><a href="pages/glassmorphism.html" class="card-link">Glassmorphism</a></h2>
+        <div class="glass-demo">
+          <div class="glass-stage">
+            <div class="glass-blob gb1"></div>
+            <div class="glass-blob gb2"></div>
+            <div class="glass-panel">
+              <span>CSS</span>
+              <span>Glass</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-path">
+        <h2 id="c-path" class="card-title"><a href="pages/motion-path.html" class="card-link">Motion Path</a></h2>
+        <div class="path-demo">
+          <svg class="path-svg" viewBox="0 0 200 110" aria-hidden="true" fill="none">
+            <path d="M 25,55 C 25,12 175,12 175,55 C 175,98 25,98 25,55" stroke="var(--color-border-secondary)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+          <div class="path-runner" aria-label="Animation following a path"></div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-has">
+        <h2 id="c-has" class="card-title"><a href="pages/has-selector.html" class="card-link">:has() Selector</a></h2>
+        <div class="has-demo">
+          <form class="has-form">
+            <label class="has-chip">
+              <input type="checkbox" name="skill" value="css" checked>
+              <span>CSS</span>
+            </label>
+            <label class="has-chip">
+              <input type="checkbox" name="skill" value="html">
+              <span>HTML</span>
+            </label>
+            <label class="has-chip">
+              <input type="checkbox" name="skill" value="js">
+              <span>JS</span>
+            </label>
+          </form>
+          <p class="has-info"><code>:has()</code> changes the parent container's border</p>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-cube">
+        <h2 id="c-cube" class="card-title"><a href="pages/3d-cube.html" class="card-link">3D Cube</a></h2>
+        <div class="cube-scene">
+          <div class="cube" aria-label="3D rotating cube" role="img">
+            <div class="cube-face cube-front">CSS</div>
+            <div class="cube-face cube-back">PURE</div>
+            <div class="cube-face cube-right">3D</div>
+            <div class="cube-face cube-left">CSS</div>
+            <div class="cube-face cube-top">NO</div>
+            <div class="cube-face cube-bottom">JS</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-cq">
+        <h2 id="c-cq" class="card-title"><a href="pages/container-queries.html" class="card-link">Container Queries</a></h2>
+        <div class="cq-demo">
+          <div class="cq-inner">
+            <span class="cq-icon">&boxbox;</span>
+            <span class="cq-label">Resize me</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-clip">
+        <h2 id="c-clip" class="card-title"><a href="pages/clip-path.html" class="card-link">clip-path Art</a></h2>
+        <div class="clip-art">
+          <div class="clip-shape cs-hexagon" role="img" aria-label="Hexagon shape"></div>
+          <div class="clip-shape cs-star" style="background:var(--c2)" role="img" aria-label="Star shape"></div>
+          <div class="clip-shape cs-chevron" style="background:var(--c4)" role="img" aria-label="Chevron shape"></div>
+          <div class="clip-shape cs-diamond" style="background:var(--c5)" role="img" aria-label="Diamond shape"></div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="c-grad">
+        <h2 id="c-grad" class="card-title"><a href="pages/animated-gradient.html" class="card-link">Animated Gradient</a></h2>
+        <div class="grad-orb" role="img" aria-label="Animated gradient orb"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <p>Made with pure <abbr title="Cascading Style Sheets">CSS</abbr> — no JavaScript &mdash; by zhilius</p>
+  </footer>
+
+</body>
+</html>
